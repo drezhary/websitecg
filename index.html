@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/cf795dd945.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav><img src="assets/images/logo/logo catur global.png " alt="">
+    <nav>
+        <img src="assets/images/logo/logo catur global.png " alt="">
         <div class="navigation">
             <ul>
+                <i id="menu-close" class="fas fa-times"></i>
                 <li><a href="#">Beranda</a></li>
                 <li><a href="#">Tentang Kami</a></li>
                 <li><a href="#">Jurusan</a></li>
                 <li><a href="#">Berita</a></li>
                 <li><a href="#">Kontak</a></li>
             </ul>
+            <img id="menu-btn" src="assets/images/icon/bars-solid.svg">
         </div>
     </nav>
 
@@ -138,6 +143,104 @@
             </div>
         </div>
     </section>
+
+    <!-- Pengajar -->
+    <section id="pengajar">
+        <h1>Dewan Guru SMK Catur Global</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptates nihil veniam, hic in dicta
+            dolor debitis numquam rerum dignissimos incidunt repellat officia explicabo, aperiam iusto praesentium
+            cumque, odio magnam.</p>
+        <div class="kotak-pengajar">
+            <div class="profil">
+                <img src="assets/images/team/paanda-website.jpg" alt="" class="foto-guru">
+                <h6>Suhanda, S.Ag</h6>
+                <p>Kepala Sekolah</p>
+                <div class="pro-links">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="profil">
+                <img src="assets/images/team/paanda-website.jpg" alt="" class="foto-guru">
+                <h6>Suhanda, S.Ag</h6>
+                <p>Kepala Sekolah</p>
+                <div class="pro-links">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="profil">
+                <img src="assets/images/team/paanda-website.jpg" alt="" class="foto-guru">
+                <h6>Suhanda, S.Ag</h6>
+                <p>Kepala Sekolah</p>
+                <div class="pro-links">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="profil">
+                <img src="assets/images/team/paanda-website.jpg" alt="" class="foto-guru">
+                <h6>Suhanda, S.Ag</h6>
+                <p>Kepala Sekolah</p>
+                <div class="pro-links">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-col">
+            <h3>Website Jurusan</h3>
+            <li>Teknik Kendaraan Ringan Otomotif</li>
+            <li>Teknik Komputer dan Jaringan Telekomunikasi</li>
+            <li>Rekayasa Perangkat Lunak</li>
+            <li>Akuntansi dan keuangan lembaga</li>
+        </div>
+        <div class="footer-col">
+            <h3>Tautan Lain</h3>
+            <li>Berita</li>
+            <li>Data Pokok Pendidikan</li>
+            <li>Blog</li>
+        </div>
+        <div class="footer-col">
+            <h3>Sosial Media</h3>
+            <li>Instagram</li>
+            <li>Youtube</li>
+            <li>Tik Tok</li>
+        </div>
+        <div class="footer-col">
+            <h3>Langganan Kabar</h3>
+            <p>Lorem ipsum dolor </p>
+            <div class="subscribe">
+                <input type="text" placeholder="Alamat email anda">
+                <a href="#" class="yellow">BERLANGGANAN</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Hak Cipta ©2024 | Dicky Rezhary Hardiyanto</p>
+            <div class="pro-links">
+                <i class="fa fa-facebook-f"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function () {
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function () {
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
 </body>
 
 </html>
