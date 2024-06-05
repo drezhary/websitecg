@@ -262,6 +262,7 @@ nav .navigation ul li a:hover {
 
 #registration .reminder .time {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
@@ -544,4 +545,56 @@ footer .copyright .pro-links i:hover {
     #jurusan {
         padding: 8vw 4vw 0 4vw;
     }
+
+    #registration {
+        margin-top: 8vw;
+        padding: 6vw 4vw 6vw 4vw;
+    }
+
+    #registration .reminder .time {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    #pengajar {
+        padding: 8vw 8vw 4vw 8vw;
+        text-align: center;
+    }
+
+    footer .copyright .pro-links {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:412px) {
+    #registration {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    #registration h1 {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+    }
+
+    #registration .reminder .time {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 }
